@@ -1,0 +1,95 @@
+.form{
+  box-shadow: 0px 0px 5px #4a61e663;
+    padding: 20px 25px;
+    border-radius: 5px;
+    background-color: #F9F9F9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    position: relative;
+    animation-name: active;
+    animation-duration: 0.5s;
+    
+      
+  div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      gap: 5px;
+    label{
+      font-size: 13px;
+      font-weight: 600;
+    }
+    input{
+      width: 400px;
+      border-radius: 5px;
+        padding: 5px 7px;
+        border: 1px solid gray;
+        transition: border 0.3s ease 0s, box-shadow 0.2s ease 0s;
+          &:hover{
+            border: 1px solid rgb(73, 163, 253);
+          }
+          &:focus{
+            border: 1px solid rgb(73, 163, 253);
+            box-shadow: 0px 0px 3px rgba(73, 163, 253, 0.378);
+            outline: transparent;
+          }
+          @media (max-width:600px){
+            width: auto;
+          }
+    }
+  }
+  .buttonblock{
+    flex-direction: row;
+    gap: 20px;
+    button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: box-shadow 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
+      
+    }
+    .add{
+      background-color: #d68946ed;
+      &:hover{
+        background-color: #d68946;
+        box-shadow: inset 0px 2px 6px #b9763c;
+      }
+    }
+    .reset{
+      background-color: #d6894697;
+      &:hover{
+        background-color: #d68946;
+        box-shadow: inset 0px 2px 6px #b9763c;
+      }
+    }
+  }
+}
+
+@keyframes active{
+  0%{
+  opacity: 0.3;
+  }
+  100%{
+  /* css свойства */
+  opacity: 1;
+  }
+  }
+
+  .animationend{
+    animation: fade 0.7s linear;
+  }
+  @keyframes fade{
+    0%{
+      box-shadow: 0px 0px 5px #2effffd6;
+      border: 1px solid #2effffd6;
+    }
+    100%{
+    /* css свойства */
+    box-shadow: 0px 0px 1px #04fc3114;
+      border: 1px solid #26262671;
+    }
+    }
