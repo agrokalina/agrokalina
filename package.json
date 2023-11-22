@@ -1,7 +1,7 @@
 {
   "name": "react-agrokalina",
   "version": "0.1.0",
-  "homepage": "https://agrokalina.github.io/agrokalina",
+  "homepage": "https://agrokalina.github.io/agrokalinaOne",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
